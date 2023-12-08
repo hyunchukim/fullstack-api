@@ -56,7 +56,7 @@ const Row = ({ title, fetchUrl, id, addRating }) => {
               key={idx}
               onClick={() => handleClick(movie)}
               className={`row__poster row__posterLarge`}
-              src={`${base_url}${movie.poster_path}`}
+              src={`${movie.poster_path}`}
               loading="lazy"
               alt={movie.title}
             />
